@@ -12,12 +12,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
+         stage('Checkout Code') {
             steps {
-                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/mhamunkarshital16/Unilever-Pro.git'
-            }
-        }
-
+               echo 'Code already checked out by Jenkins'
+          }
+     }  
         stage('Build Application') {
             steps {
                 sh 'echo "Building application..."'
