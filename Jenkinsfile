@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "your-dockerhub-username/unilever-app"
+        IMAGE_NAME = "moreshital16/unilever-app"
         TAG = "${BUILD_NUMBER}"
         KUBE_NAMESPACE_DEV = "unilever-dev"
         KUBE_NAMESPACE_QA = "unilever-qa"
@@ -14,7 +14,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/your-repo.git'
+                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/mhamunkarshital16/Unilever-Pro.git'
             }
         }
 
