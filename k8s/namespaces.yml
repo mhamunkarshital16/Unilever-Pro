@@ -1,0 +1,25 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: unilever-dev
+
+---    
+
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: unilever-qa
+
+---    
+
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: unilever-uat
+
+---    
+
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: unilever-prod    
